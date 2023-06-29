@@ -1,6 +1,9 @@
 import './App.css';
 import Navbar from './components/navbar'; 
 import Basket from './components/basketModal';
+import { useState } from "react";
+import './homepage.js';
+
 
 // the below needs to be on the adopt page/section and then passed to the Basket function
 const [selectedCats, setSelectedCats] = useState({
@@ -10,6 +13,7 @@ const [selectedCats, setSelectedCats] = useState({
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -22,6 +26,8 @@ function App() {
         
       </header>
 =======
+=======
+>>>>>>> a202e2a76bae0397b945f9c0bef6c01352443b3c
 
       <Navbar />
     
@@ -32,8 +38,11 @@ function App() {
       <p>
         Created by Chris Kelly, Chloe Moss, Idnan Hussain and Nathan Hynes
       </p>
+<<<<<<< HEAD
     <Footer/>
 
+=======
+>>>>>>> a202e2a76bae0397b945f9c0bef6c01352443b3c
     </div>
   );
 }
