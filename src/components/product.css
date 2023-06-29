@@ -13,32 +13,28 @@ body {
 h1 {
     font-size: 51.5px;
     color: #BEA2CF;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    margin-top: 30px;
 }
 
 p {
     font-family: 'DM Sans', sans-serif;
+    padding-top: 2px;
+    line-height: 5px;
 }
 
 .image-row-1, .image-row-2 {
     display: flex;
     flex-direction: row;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-around;
 
 }
 
 .cat-image {
-width: 250px;
-height: 250px;
-border-radius: 25px;
-}
-
-.grid-button{
-    display: block;
-    font-family: "lazyDog";
-    background-color:#F48B48;
+    width: 275px;
+    height: 275px;
     border-radius: 25px;
-    border: none;
-
 }
