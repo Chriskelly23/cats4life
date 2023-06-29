@@ -9,7 +9,9 @@ import Product from './components/product';
 // the below needs to be on the adopt page/section and then passed to the Basket function
 const [selectedCats, setSelectedCats] = useState({
   catName: "", catBreed: "", catImgSrc: ""});
-
+function addToBasket(cat){
+  setSelectedCats(selectedCats+=cat);
+}
 
 function App() {
   return (
