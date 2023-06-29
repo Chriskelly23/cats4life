@@ -5,7 +5,7 @@ import '../App.css';
 
 const Basket = (props) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  
+  const [total, setTotal] = useState("");
   function openModal() {
     setModalIsOpen(true);
   }
@@ -15,8 +15,8 @@ const Basket = (props) => {
   function catPrice() {
       let num = Math.floor(Math.random()*25000);
       let newNum = num/100;
-      let price = newNum.toFixed(2);
-      return price
+      let catPrice = newNum.toFixed(2);
+      return catPrice
   }
 
   return (
@@ -30,11 +30,10 @@ const Basket = (props) => {
           ariaHideApp={false}
           contentLabel='Shopping Basket'
         >
+          
           <div className="basket">
           <button className="close" onClick={closeModal}>X</button>
           <h2>Your chosen cats:</h2>
-
-          {/* Need to create a selected cats component to be shown here */}
           {props.selectedCats.map(
             (cat, i) => {
               return (
@@ -43,12 +42,12 @@ const Basket = (props) => {
                 <img src={cat.catImgSrc} alt={cat.catName}></img>
                 <h3>{cat.catBreed}</h3>
                 <p>catPrice()</p>
+                {setTotal({total} += catPrice)}
                 </div>
               )
             }
           )}
-          <ChosenCats name={selectedCats.catName} imgSrc={selectedCats.catImgSrc} price={selectedCats.catPrice} />
-
+          <h3 className="total">{total}</h3>
           </div>
         </Modal>
     </div>
