@@ -1,5 +1,8 @@
 import './App.css';
-import Basket from 'basketModal';
+import Navbar from './components/navbar'; 
+
+
+// import Basket from './components/basketModal';
 
 // the below needs to be on the adopt page/section and then passed to the Basket function
 const [selectedCats, setSelectedCats] = useState([
@@ -10,6 +13,9 @@ const [selectedCats, setSelectedCats] = useState([
 function App() {
   return (
     <div className="App">
+
+      <Navbar />
+    
       <h1>
         Cats 4 Life - Coming Soon!
       </h1>
