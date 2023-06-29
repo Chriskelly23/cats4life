@@ -1,0 +1,79 @@
+@font-face {
+    font-family: lazyDog;
+    src: url(./fonts/lazy_dog.ttf);
+  }
+
+
+
+body {
+    background: #f7f3ea;
+    font-family: "lazyDog";
+}
+
+
+
+.navbar {
+    width: 100vw;
+    font-size: 80px;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 0px;
+    
+
+}
+
+.main-nav-image {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.shopping-cart-button {
+    width: 50px;
+    height: 20px;
+    background: none;
+    border-style: none;
+
+}
+
+.navbar-button {
+    /* background: none; */
+    border-style: none;
+    margin: -5px;
+    padding: 20px;
+    cursor: pointer;
+    font-family: 'lazyDog';
+    font-size: 25px;  
+    /* background-color: red;   */
+    background-color: #f7f3ea;
+    
+                                                
+}
+
+.shopping-cart-image {
+
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.profile-button {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.active {
+    background-image: url(images/0-navbar/mouse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
