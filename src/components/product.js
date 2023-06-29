@@ -33,27 +33,33 @@ const Product = () => {
 
         <div className="image-row-1">
             {catData?.slice(0, 4).map((cat) => (
-            <div className="image-button-pair">
-            <img className="cat-image" src={cat.url} />
-            <button
-            className="grid-button"
-             // onClick={(event) => add to basket}
-            >
-            <span class="material-symbols-outlined ">find out more</span>
-            </button>
+            <div className="image-container">
+                    <img className="cat-image" src={cat.url} />
+                    <h2 className= "cat-name"> Type of kitty </h2>
+                    <p className= "breed"> Kitty </p>
+                    <p className= "price"> £300 </p>
+                    <button
+                        className="grid-button"
+                // onClick={(event) => add to basket}
+                    >
+                    <span class="grid-button-text">MORE INFO</span>
+                    </button>
             </div>))}
         </div>
 
         <div className="image-row-2">
             {catData?.slice(4, 8).map((cat) => (
-            <div className="image-button-pair">
-            <img className="cat-image" src={cat.url} />
-            <button
-            className="grid-button"
-             // onClick={(event) => add to basket}
-            >
-            <span class="grid-button-text">find out more</span>
-            </button>
+              <div className="image-container">
+                    <img className="cat-image" src={cat.url} />
+                    <h2 className= "cat-name"> Type of kitty </h2>
+                    <p className= "cat-breed"> Kitty </p>
+                    <p className= "price"> £300 </p>
+                    <button
+                        className="grid-button"
+                // onClick={(event) => add to basket}
+                    >
+                    <span class="grid-button-text">MORE INFO</span>
+                    </button>
             </div>))}
         </div> 
     
