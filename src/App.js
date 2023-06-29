@@ -13,6 +13,21 @@ const [selectedCats, setSelectedCats] = useState({
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
+
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Cats for Life - Coming Soon!
+        </p>
+        <p>
+      created by Chris Kelly, Chloe Moss, Idnan Hussain and Nathan Hynes
+        </p>
+        
+      </header>
+=======
+=======
+>>>>>>> a202e2a76bae0397b945f9c0bef6c01352443b3c
 
       <Navbar />
     
@@ -23,6 +38,11 @@ function App() {
       <p>
         Created by Chris Kelly, Chloe Moss, Idnan Hussain and Nathan Hynes
       </p>
+<<<<<<< HEAD
+    <Footer/>
+
+=======
+>>>>>>> a202e2a76bae0397b945f9c0bef6c01352443b3c
     </div>
   );
 }
