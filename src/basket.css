@@ -1,0 +1,50 @@
+@font-face {
+    font-family: lazyDog;
+    src: url(./components/fonts/lazy_dog.ttf);
+  }
+  
+  .App {
+    text-align: center;
+  }
+  h1{
+    font-family: 'lazyDog';
+  }  
+.trolley{
+    width: 160px;
+  }
+  .basketModal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:17px;
+    width: 25vw;
+    height: 100vh;
+  }
+  .ReactModal__Overlay{
+    position:absolute;
+    margin-left: 100vw;
+    transition: margin-left 3000ms ease-in-out;
+  }
+  .ReactModal__Overlay--after-open{
+    margin-left: 75vw;
+  }
+  .ReactModal__Overlay--before-close{
+    margin-left: 100vw;
+  }
+  .close{
+    padding-right: 20px;
+    padding-top: 4px;
+    font-weight: 900;
+    font-size: larger;
+    width: 15px;
+    border-radius: 35%;
+    margin: 2px;
+    box-shadow: 4px 3px 6px -3px;
+    background-color: #F7F3EA;
+    font-family: 'lazyDog';
+    color: #272730
+  }
+  .close:hover {
+    box-shadow: none;
+  }
