@@ -1,13 +1,10 @@
 import './App.css';
 import Navbar from './components/navbar'; 
-
-
-// import Basket from './components/basketModal';
+import Basket from './components/basketModal';
 
 // the below needs to be on the adopt page/section and then passed to the Basket function
-const [selectedCats, setSelectedCats] = useState([
-  catName: "", catBreed: "", catImgSrc: ""
-]);
+const [selectedCats, setSelectedCats] = useState({
+  catName: "", catBreed: "", catImgSrc: ""});
 
 
 function App() {
