@@ -1,0 +1,44 @@
+@font-face {
+    font-family: lazyDog;
+    src: url(./fonts/lazy_dog.ttf);
+  }
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+
+body {
+    background: #f7f3ea;
+    font-family: "lazyDog";
+}
+
+h1 {
+    font-size: 51.5px;
+    color: #BEA2CF;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.image-row-1, .image-row-2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+
+}
+
+.cat-image {
+width: 250px;
+height: 250px;
+border-radius: 25px;
+}
+
+.grid-button{
+    display: block;
+    font-family: "lazyDog";
+    background-color:#F48B48;
+    border-radius: 25px;
+    border: none;
+
+}
