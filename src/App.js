@@ -1,5 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
+
 
 function App() {
   return (
@@ -7,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Cats 4 Life - Coming Soon!
+          Cats for Life - Coming Soon!
         </p>
         <p>
       created by Chris Kelly, Chloe Moss, Idnan Hussain and Nathan Hynes
