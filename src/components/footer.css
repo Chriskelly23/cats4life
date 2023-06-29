@@ -1,0 +1,40 @@
+
+
+.footer {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    background: #272730; 
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 150px;
+    align-items: center;
+    
+}
+
+.footer-tag {
+    color: orange;
+    font-size: 30px;
+    margin-bottom: -15px;
+}
+
+.footer-text {
+    color: black;
+    font-size: 14px;
+}
+
+.box1, .box2, .box3 {
+    
+    
+    padding: 10px;
+    background-color: #f7f3ea; 
+    border-radius: 25px;
+    margin: 5px;
+    width: 20vw;
+    max-height: 92px;
+}
+
+.box3 {
+    padding-bottom: -20px;
+}
+

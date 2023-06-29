@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/navbar'; 
+import Footer from './components/Footer';
 
 
 // import Basket from './components/basketModal';
@@ -17,6 +18,8 @@ function App() {
       <p>
         Created by Chris Kelly, Chloe Moss, Idnan Hussain and Nathan Hynes
       </p>
+    <Footer/>
+
     </div>
   );
 }
