@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/navbar'; 
 
 
-import Basket from 'basketModal';
+// import Basket from './components/basketModal';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <h1>
         Cats 4 Life - Coming Soon!
       </h1>
-      <Basket />
+      {/* <Basket /> */}
       <p>
         Created by Chris Kelly, Chloe Moss, Idnan Hussain and Nathan Hynes
       </p>

@@ -1,12 +1,13 @@
 @font-face {
     font-family: lazyDog;
-    src: url(fonts/LazyDog.TTF);
+    src: url(./fonts/lazy_dog.ttf);
   }
 
 
 
 body {
     background: #f7f3ea;
+    font-family: "lazyDog";
 }
 
 
@@ -69,7 +70,7 @@ body {
 }
 
 .active {
-    background-image: url(images/mouse.png);
+    background-image: url(images/0-navbar/mouse.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
