@@ -22,39 +22,52 @@ h2 {
     margin-top: 0;
 }
 
+h3 {
+    font-size: 20px;
+    color: #F48B48;
+}
+
 p {
     font-family: 'DM Sans', sans-serif;
     line-height: 5px;
 }
 
-.image-row-1, .image-row-2 {
+.white-logo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.web-footer {
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+
+.web-information {
+    flex-basis: 1000px ;
+    align-items: right;
+    justify-content: right;
 
 }
 
-.cat-image {
-    width: 275px;
-    height: 275px;
-    border-radius: 25px;
+.white-cat, .ginger-cat{
+    display: flex;
+    align-items: flex-end;
+  }
+
+.white-cat {
+    padding-right: 50px;
 }
 
-.grid-button{
-    display: block;
-    margin-left: auto;
-    margin: auto;
-    width: 230px;
-    height: 41px;
-    font-family: "lazyDog";
-    font-size: 17px;
-    background-color:#F48B48;
-    border-radius: 25px;
-    border: none;
+.ginger-cat {
+    padding-left: 60px;
 }
 
-.grid-button-text {
-    text-align: center;
-}
+
+
+
+
+
+
+

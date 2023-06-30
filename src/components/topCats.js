@@ -1,10 +1,8 @@
-import './product.css'
+import './topCats.css';
 import React, { useEffect, useState } from "react"
 import axios from "axios";
-import Navbar from './navbar';
-import WebFooter from './webFooter';
 
-const Product = () => {
+const TopCats = () => {
     const [catData, setCatData] = useState(null);
     
     const Fetchdata = () => {
@@ -27,16 +25,15 @@ const Product = () => {
     console.log(catData);
 
     return (
-
         <section className='product'>
             <div className= 'product-heading'>
-            <Navbar />
-                <h1>ADOPT</h1>
-                <p>Click 'ADOPT ME' to find out more about each cat.</p>
+                <h1>TOP CATS!</h1>
+                <h2>WHAT ARE YOU WAITING FOR?</h2>
+                <p>Find out more about each cat by clicking the button below.</p>
             </div> 
 
         <div className="image-row-1">
-            {catData?.slice(0, 4).map((cat) => (
+            {catData?.slice(0, 3).map((cat) => (
             <div className="image-container">
                     <img className="cat-image" src={cat.url} />
                     <h2 className= "cat-name"> Type of kitty </h2>
@@ -50,25 +47,7 @@ const Product = () => {
                     </button>
             </div>))}
         </div>
-
-        <div className="image-row-2">
-            {catData?.slice(4, 8).map((cat) => (
-              <div className="image-container">
-                    <img className="cat-image" src={cat.url} />
-                    <h2 className= "cat-name"> Type of kitty </h2>
-                    <p className= "cat-breed"> Kitty </p>
-                    <p className= "price"> £300 </p>
-                    <button
-                        className="grid-button"
-                // onClick={(event) => add to basket}
-                    >
-                    <span class="grid-button-text">MORE INFO</span>
-                    </button>
-        <WebFooter />
-            </div>))}
-        </div> 
-    
-
+        
         </section>
 
         
@@ -77,4 +56,4 @@ const Product = () => {
 };
 
 
-export default Product;
+export default TopCats;
