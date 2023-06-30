@@ -32,8 +32,9 @@ p {
     line-height: 5px;
 }
 
-.black-logo {
-    padding-top: 50px;
+.homepage{
+    display:flex;
+    flex-direction: row;
 }
 
 .grid-button{

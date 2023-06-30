@@ -1,58 +1,27 @@
 import './App.css';
 import Navbar from './components/navbar'; 
 import HomePage from './components/homePage';
-import TopCats from './components/topCats';
-import Rehoming from './components/rehoming';
-import Footer from './components/Footer';
-import Product from './components/product';
+import Product from './components/adopt';
 import WebFooter from './components/webFooter';
-import Basket from './components/basketModal';
-import { useState } from "react";
-import Product from './components/product';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from './components/homePage';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import logo from "./components/images/00-logos/1.png";
 
 
 // the below needs to be on the adopt page/section and then passed to the Basket function
-const [selectedCats, setSelectedCats] = useState({
-  catName: "", catBreed: "", catImgSrc: ""});
-function addToBasket(cat){
-  setSelectedCats(selectedCats+=cat);
-}
 
 function App() {
   return (
-    <Router>
-    <div className="App">
-    
+    <BrowserRouter>
+    <img className="main-nav-image" src={logo} alt="logo" />
     <Navbar />
-
-    <div className="content">
-      <Switch>
-        <Route exact path="/">
-          <HomePage />
-          <TopCats />
-          <Rehoming />
-          <Footer />
-          <WebFooter />
-        </Route>
-        
-        <Route exact path="/rehoming">
-          <Rehoming />
-        </Route>
-
-        <Route exact path="/adopt">
-          <Product />
-        </Route>
-
-      
-
-=
-      </Switch>
-      
-      </div>
-    </div>
-    </Router>
+      <Routes>
+        <Route path="./components/homePage" element={ <HomePage />} />
+        <Route path="./components/product" element={ <Product />} />
+      </Routes>
+      <HomePage />
+      <WebFooter />
+    </BrowserRouter>
+    
   );
 }
 
