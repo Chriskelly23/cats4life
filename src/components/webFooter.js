@@ -8,6 +8,7 @@ import gingercat from './images/6-footer/gingercat.png';
 
 const WebFooter = () => {
     return (
+        <div className="mainDiv">
 <section className='web-footer'>
 
     <div ClassName= 'ginger-cat'>
@@ -36,11 +37,11 @@ const WebFooter = () => {
             <p>Macclesfield SK9 CAT</p>
         </div>
         
-        <div className= 'web-footer-2'>
-            <h3 ClassName= '2.1'>PRIVACY STATEMENT</h3>
-            <h3 ClassName= '2.2'>T&C'S</h3>
-        </div>
-
+        {/* <div className= 'web-footer-2'>
+            <h3 ClassName= 'f2.1'>PRIVACY STATEMENT</h3>
+            <h3 ClassName= 'f2.2'>T&C'S</h3>
+        </div> */}
+        <div className="veryBottom">
         <div className= 'web-footer-3'>
             <img src={paymentimage}
                         width={200}
@@ -51,7 +52,7 @@ const WebFooter = () => {
         <div className = 'web-footer-4'>
             <img src={socialmedia}></img>
         </div>
-            
+        </div>
         
         </div>
 
@@ -66,7 +67,7 @@ const WebFooter = () => {
             </div>
 
 </section>
-
+</div>
             
 
 

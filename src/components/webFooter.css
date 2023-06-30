@@ -7,19 +7,18 @@
 body {
     background: #f7f3ea;
     font-family: "lazyDog";
+    margin-bottom: -20px;
 }
 
 h1 {
     font-size: 51.5px;
     color: #BEA2CF;
-    padding-bottom: 0px;
     margin-bottom: 5px;
     margin-top: 30px;
 }
 
 h2 {
     padding-top: 5px;
-    margin-top: 0;
 }
 
 h3 {
@@ -30,25 +29,28 @@ h3 {
 p {
     font-family: 'DM Sans', sans-serif;
     line-height: 5px;
+    color:#F7F3EA;
 }
-
-.white-logo {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+/* 
+.mainDiv{
+    position:absolute;
+    bottom:0;
+    left: 0;
+    right:0;
+} */
 
 .web-footer {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    
+    background-color: #272730;
+    justify-content:space-evenly;
+    text-align: center;
 }
 
 .web-information {
-    flex-basis: 1000px ;
-    align-items: right;
-    justify-content: right;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .white-cat, .ginger-cat{
@@ -57,16 +59,12 @@ p {
   }
 
 .white-cat {
-    padding-right: 50px;
+  margin-right: -10px;
 }
 
 .ginger-cat {
-    padding-left: 60px;
+    margin-left: -100px;
 }
-
-
-
-
 
 
 
