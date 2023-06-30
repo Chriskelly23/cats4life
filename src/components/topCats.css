@@ -4,6 +4,7 @@
   }
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
+
 body {
     background: #f7f3ea;
     font-family: "lazyDog";
@@ -17,13 +18,9 @@ h1 {
     margin-top: 30px;
 }
 
-h2 {
-    padding-top: 5px;
-    margin-top: 0;
-}
-
 p {
     font-family: 'DM Sans', sans-serif;
+    padding-top: 2px;
     line-height: 5px;
 }
 
@@ -44,17 +41,9 @@ p {
 
 .grid-button{
     display: block;
-    margin-left: auto;
-    margin: auto;
-    width: 230px;
-    height: 41px;
     font-family: "lazyDog";
-    font-size: 17px;
     background-color:#F48B48;
     border-radius: 25px;
     border: none;
-}
 
-.grid-button-text {
-    text-align: center;
 }
